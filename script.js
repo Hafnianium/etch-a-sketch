@@ -1,9 +1,18 @@
 for (i = 0; i < 256; i++) {
-  const square_i = document.createElement('div')
-  square_i.classList.add('squareDiv')
-  square_i.style.borderColor = 'black';
-  square_i.style.borderStyle = 'solid'
-  square_i.style.borderWidth = '2px'
-  square_i.textContent = i + 1
-  grid.appendChild(square_i)
+  const squareDivs = document.createElement('div')
+  squareDivs.classList.add('squareDiv')
+  squareDivs.style.borderColor = 'black';
+  squareDivs.style.borderStyle = 'solid'
+  squareDivs.style.borderWidth = '2px'
+  squareDivs.textContent = i + 1
+  grid.appendChild(squareDivs)
 }
+
+const squareDivs = grid.querySelectorAll('div')
+
+function hover(e) {
+  this.classList.add('hover')
+  console.log(this.classList.value);
+}
+
+squareDivs.forEach(div => div.addEventListener('mouseover', hover));

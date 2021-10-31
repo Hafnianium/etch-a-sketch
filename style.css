@@ -26,3 +26,7 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+
+.hover {
+  background: black;
+}
