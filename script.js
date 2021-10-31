@@ -1,10 +1,6 @@
 for (i = 0; i < 256; i++) {
   const squareDivs = document.createElement('div')
   squareDivs.classList.add('squareDiv')
-  squareDivs.style.borderColor = 'black';
-  squareDivs.style.borderStyle = 'solid'
-  squareDivs.style.borderWidth = '2px'
-  squareDivs.textContent = i + 1
   grid.appendChild(squareDivs)
 }
 
