@@ -1,4 +1,4 @@
-body {
+#page {
   display: flex;
   flex-direction: column;
 }
@@ -10,23 +10,29 @@ h1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 56px;
   padding-top: 5px;
-  padding-right: 5px;
+  padding-left: 5px;
 }
 
-content {
+#content {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  padding-inline: 5%;
 }
 
+#sideBar {
+  display: flex;
+  flex-direction: column;
+}
 
 #gridContainer {
-  padding: 391px;
-  padding-top: 10px;
+  display: flex;
+  width: 484px;
+  padding-right: 325px;
 }
 
 #grid {
   display: flex;
-  flex-direction: row;
   flex-flow: row wrap;
   margin: 0px;
   border-color: black;
