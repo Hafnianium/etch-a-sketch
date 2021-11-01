@@ -29,6 +29,7 @@ h1 {
   display: flex;
   width: 484px;
   padding-right: 325px;
+  padding-top: 20px;
 }
 
 #grid {
